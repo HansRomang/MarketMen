@@ -8,7 +8,6 @@
  */
 
 import React from 'react';
-import Home from './Home';
 import Layout from '../../components/Layout';
 
 async function action({ fetch }) {
@@ -22,11 +21,7 @@ async function action({ fetch }) {
   return {
     title: 'React Starter Kit',
     chunks: ['home'],
-    component: (
-      <Layout>
-        <Home news={data.news} />
-      </Layout>
-    ),
+    component: <Layout />,
   };
 }
 
